@@ -24,5 +24,23 @@ defmodule Mix.Tasks.TwentyTwenty do
     |> TwentyTwenty.day1part2()
     |> Integer.to_string()
     |> Mix.shell().info()
+
+    day_2_input =
+      "lib/twentytwenty/day2.txt"
+      |> File.read!()
+
+    Mix.shell().info("Day 2, Part 1:")
+
+    day_2_input
+    |> TwentyTwenty.day2part1()
+    |> Integer.to_string()
+    |> Mix.shell().info()
+
+    Mix.shell().info("Day 2, Part 2:")
+
+    day_2_input
+    |> TwentyTwenty.day2part2()
+    |> Integer.to_string()
+    |> Mix.shell().info()
   end
 end

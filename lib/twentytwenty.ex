@@ -35,4 +35,7 @@ defmodule TwentyTwenty do
     end)
     |> Enum.reduce(fn x, accumulator -> x * accumulator end)
   end
+
+  def day2part1(database), do: TwentyTwenty.Day2.part1(database)
+  def day2part2(database), do: TwentyTwenty.Day2.part2(database)
 end
